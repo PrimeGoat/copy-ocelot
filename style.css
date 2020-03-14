@@ -47,8 +47,9 @@ body {
 	height: 100%;
 	max-width: 1200px;
 	display: block;
-	/*margin: auto 0 auto 0;*/
+	margin: 0 auto 0 auto;
 	padding: 0 3% 0 3%;
+	text-align: center;
 }
 
 .headerA {
@@ -60,6 +61,20 @@ body {
 	vertical-align: baseline;
 	justify-content: space-between;
 	/*padding: 4px 15px 2px;*/
+}
+
+.adivs {
+	width: 250px;
+	display: flex;
+	justify-content: flex-start;
+	align-items: flex-start;
+}
+
+.bdivs {
+	width: 250px;
+	display: flex;
+	justify-content: center;
+	align-items: flex-start;
 }
 
 .headerB {
@@ -79,15 +94,20 @@ body {
 
 .headerButtons {
 	display: flex;
+	width: 250px;
 	/*align-items: stretch;*/
 	vertical-align: middle;
+	justify-content: flex-end;
 	margin: 4px;
 }
 
-.headerButton {
+.headerFont {
 	font-family: Arial;
 	box-sizing: border-box;
 	font-size: 10px;
+}
+
+.headerButton {
 	font-weight: bold;
 	background-color: #567b95;
 	color: white;
@@ -97,7 +117,7 @@ body {
 }
 
 #subscribe {
-	margin-right: 7px;
+	margin-right: 10px;
 	height: 32px;
 	width: 120px;
 }
@@ -107,8 +127,33 @@ body {
 	width: 63px;
 }
 
-.languages {
-	width: 100%;
-	position: absolute;
-	text-align: center;
+.lang {
+	margin: 5px;
+	padding: 5px;
+	padding-inline-start: 0;
+	transition: 0.5s;
+}
+
+.lang:hover {
+	background-color: #f7f7f7;
+	border-radius: 3px;
+	transition: 0.5s;
+}
+
+.leftIcons {
+	box-sizing: border-box;
+	width: 37px;
+	height: 37px;
+	padding: 0px;
+	margin: 4px;
+	transition: 0.5s;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.leftIcons:hover {
+	background-color: #f7f7f7;
+	border-radius: 3px;
+	transition: 0.5s;
 }
