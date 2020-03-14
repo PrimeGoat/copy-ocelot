@@ -21,6 +21,7 @@ body {
 	display: flex;
 	justify-content: center;
 	align-items: center;
+	border-bottom: 1px solid #ebebeb;
 }
 
 .adContent {
@@ -30,7 +31,84 @@ body {
 }
 
 .ad {
-	background-color: blue;
+	/*background-color: blue;*/
 	width: 970px;
 	height: 250px;
+	object-fit: contain;
+}
+
+.headerBar {
+	height: 132px;
+	display: block;
+	text-align: center;
+}
+
+.header {
+	height: 100%;
+	max-width: 1200px;
+	display: block;
+	/*margin: auto 0 auto 0;*/
+	padding: 0 3% 0 3%;
+}
+
+.headerA {
+	max-width: 1200px;
+	display: flex;
+	height: 42px;
+	/*margin: 0 auto;*/
+	position: relative;
+	vertical-align: baseline;
+	justify-content: space-between;
+	/*padding: 4px 15px 2px;*/
+}
+
+.headerB {
+	max-width: 1200px;
+	height: 58px;
+	margin-top: -15px;
+}
+
+.headerC {
+	max-width: 1200px;
+	height: 35px;
+	border-top: 1px solid #ebebeb;
+	border-bottom: 1px solid #000000;
+	padding: 0 60px 0 60px;
+	margin-top: 4px;
+}
+
+.headerButtons {
+	display: flex;
+	/*align-items: stretch;*/
+	vertical-align: middle;
+	margin: 4px;
+}
+
+.headerButton {
+	font-family: Arial;
+	box-sizing: border-box;
+	font-size: 10px;
+	font-weight: bold;
+	background-color: #567b95;
+	color: white;
+	padding-top: 12px;
+	border: 1px solid #326891;
+	border-radius: 3px;
+}
+
+#subscribe {
+	margin-right: 7px;
+	height: 32px;
+	width: 120px;
+}
+
+#login {
+	height: 32px;
+	width: 63px;
+}
+
+.languages {
+	width: 100%;
+	position: absolute;
+	text-align: center;
 }
