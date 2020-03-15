@@ -198,6 +198,11 @@ body {
 	align-content: center;
 }
 
+.colRow {
+	display: flex;
+	justify-content: stretch;
+}
+
 .colAleft {
 	flex: 1 1 285px;
 	display: flex;
@@ -208,6 +213,7 @@ body {
 
 .colAright {
 	flex: 1 1 515px;
+	object-fit: scale-down;
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: stretch;
