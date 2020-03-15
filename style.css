@@ -25,14 +25,14 @@ body {
 }
 
 .adContent {
-	width: 970px;
+	width: 1200px;
 	height: 250px;
 	padding: 15px 0 15px 0;
 }
 
 .ad {
 	/*background-color: blue;*/
-	width: 970px;
+	width: 1200px;
 	height: 250px;
 	object-fit: contain;
 }
@@ -114,6 +114,12 @@ body {
 	padding-top: 12px;
 	border: 1px solid #326891;
 	border-radius: 3px;
+	transition: 0.5s;
+}
+
+.headerButton:hover {
+	background-color: #326891;
+	transition: 0.5s;
 }
 
 #subscribe {
@@ -156,4 +162,59 @@ body {
 	background-color: #f7f7f7;
 	border-radius: 3px;
 	transition: 0.5s;
+}
+
+.headerCategories {
+	height: 100%;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.outerContent {
+	width: 100wv;
+	display: flex;
+	margin: 0px;
+	padding: 0px;
+	justify-content: stretch;
+}
+
+.mainContent {
+	max-width: 1200px;
+	padding: 0 3%;
+	margin: 0;
+	display: flex;
+	flex: 1 1 1200px;
+	justify-content: center;
+}
+
+.leftColumn {
+	max-width: 800px;
+	border-right: 1px solid #ebebeb;
+	flex: 1 1 800px;
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-top;
+	align-content: center;
+}
+
+.colAleft {
+	flex: 1 1 285px;
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+	align-content: stretch;
+}
+
+.colAright {
+	flex: 1 1 515px;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: stretch;
+	align-content: flex-start;
+}
+
+.rightColumn {
+	max-width: 400px;
+	flex: 1 1 400px;
 }
