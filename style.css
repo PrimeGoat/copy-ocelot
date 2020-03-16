@@ -9,6 +9,7 @@ body {
 	font-size: 12px;
 	margin: 0;
 	padding: 0;
+	line-height: 150%;
 }
 
 #app {
@@ -264,12 +265,10 @@ p {
 
 .flex30 {
 	width: 30%;
-	flex: 1 1 40;
 }
 
 .flex70 {
 	width: 70%;
-	flex: 1 1 60;
 }
 
 #blockAcolA {
@@ -284,9 +283,9 @@ p {
 }
 
 .storyPic {
-	width: 495;
 	object-fit: scale-down;
 }
+
 
 .rightColumn {
 	max-width: 400px;
@@ -317,6 +316,10 @@ p {
 	border-top: 1px solid #ebebeb;
 }
 
+.smallStory {
+	flex: 1 1 180px;
+}
+
 .contentPiece {
-	
+
 }
