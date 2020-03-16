@@ -95,6 +95,13 @@ body {
 	margin-top: 4px;
 }
 
+.footer {
+	max-width: 1200px;
+	height: 35px;
+	padding: 0 60px 0 60px;
+	margin-top: 4px;
+}
+
 .headerButtons {
 	display: flex;
 	width: 250px;
@@ -114,7 +121,7 @@ body {
 	font-weight: bold;
 	background-color: #567b95;
 	color: white;
-	padding-top: 12px;
+	padding-top: 8px;
 	border: 1px solid #326891;
 	border-radius: 3px;
 	transition: 0.5s;
@@ -201,15 +208,31 @@ body {
 	padding-bottom: 20px;
 }
 
+.nopad {
+	padding: 0;
+}
 
 .leftColumn {
 	max-width: 800px;
-	border-right: 1px solid #ebebeb;
 	flex: 1 1 800px;
 	display: flex;
 	flex-direction: column;
 	justify-content: flex-start;
 	align-content: center;
+}
+
+.leftBorder {
+	width: 100%;
+	max-width: 800px;
+	padding-top: 15px;
+	border-top: 1px solid black;
+}
+
+.rightBorder {
+	width: 100%;
+	max-width: 800px;
+	padding-top: 12px;
+	border-top: 4px double black;
 }
 
 .colRow {
@@ -223,9 +246,19 @@ p {
 	margin: 0;
 }
 
+h3 {
+	padding: 0;
+	margin: 0;
+}
+
 .greyText {
 	color: #999999;
 	font-size: 75%;
+}
+
+.grey {
+	color: #999999;
+	font-size: 125%;
 }
 
 .lightGreyText {
@@ -235,6 +268,10 @@ p {
 
 .padTop {
 	padding-top: 10px;
+}
+
+.padBottom {
+	padding-bottom: 10px;
 }
 
 .padRight {
@@ -247,6 +284,10 @@ p {
 
 .marginLeft {
 	margin-left: 10px;
+}
+
+.marginTop {
+	margin-top: 10px;
 }
 
 .contentColumn {
@@ -279,7 +320,7 @@ p {
 #blockAcolB {
 	flex: 1 1 515px;
 	display: flex;
-	padding-right: 15px;
+	padding-right: 0px;
 }
 
 .storyPic {
@@ -312,8 +353,22 @@ p {
 	border-bottom: 1px solid #ebebeb;
 }
 
+.horizBorderBD {
+	border-bottom: 4px double #ebebeb;
+}
+
 .horizBorderT {
 	border-top: 1px solid #ebebeb;
+}
+
+.vertBorder {
+	border-right: 1px solid #ebebeb;
+	height: 100;
+	margin: 15px 15px 0 15px;
+}
+
+.blackTop {
+	border-top: 1px solid black;
 }
 
 .smallStory {
@@ -322,4 +377,8 @@ p {
 
 .contentPiece {
 
+}
+
+.avatar {
+	position: relative;
 }
