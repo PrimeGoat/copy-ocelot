@@ -5,6 +5,8 @@ html {
 }
 
 body {
+	font-family: Georgia, 'Times New Roman', Times, serif;
+	font-size: 12px;
 	margin: 0;
 	padding: 0;
 }
@@ -176,7 +178,7 @@ body {
 	display: flex;
 	margin: 0px;
 	padding: 0px;
-	justify-content: stretch;
+	justify-content: center;
 }
 
 .mainContent {
@@ -185,8 +187,19 @@ body {
 	margin: 0;
 	display: flex;
 	flex: 1 1 1200px;
-	justify-content: center;
+	flex-direction: column;
+	justify-content: flex-start;
+	align-content: center;
 }
+
+.contentBlock {
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	align-content: flex-start;
+	padding-bottom: 20px;
+}
+
 
 .leftColumn {
 	max-width: 800px;
@@ -194,33 +207,116 @@ body {
 	flex: 1 1 800px;
 	display: flex;
 	flex-direction: column;
-	justify-content: flex-top;
+	justify-content: flex-start;
 	align-content: center;
 }
 
 .colRow {
 	display: flex;
+	flex-direction: row;
 	justify-content: stretch;
 }
 
-.colAleft {
-	flex: 1 1 285px;
+p {
+	padding: 0;
+	margin: 0;
+}
+
+.greyText {
+	color: #999999;
+	font-size: 75%;
+}
+
+.lightGreyText {
+	color: #cccccc;
+	font-size: 75%;
+}
+
+.padTop {
+	padding-top: 10px;
+}
+
+.padRight {
+	padding-right: 10px;
+}
+
+.marginRight {
+	margin-right: 10px;
+}
+
+.marginLeft {
+	margin-left: 10px;
+}
+
+.contentColumn {
 	display: flex;
 	flex-direction: column;
 	justify-content: flex-start;
 	align-content: stretch;
 }
 
-.colAright {
-	flex: 1 1 515px;
-	object-fit: scale-down;
+.contentRow {
 	display: flex;
-	flex-wrap: wrap;
-	justify-content: stretch;
-	align-content: flex-start;
+	flex-direction: row;
+	justify-content: flex-start;
+	align-content: stretch;
+}
+
+.flex30 {
+	width: 30%;
+	flex: 1 1 40;
+}
+
+.flex70 {
+	width: 70%;
+	flex: 1 1 60;
+}
+
+#blockAcolA {
+	flex: 1 1 285px;
+	padding-right: 20px;
+}
+
+#blockAcolB {
+	flex: 1 1 515px;
+	display: flex;
+	padding-right: 15px;
+}
+
+.storyPic {
+	width: 495;
+	object-fit: scale-down;
 }
 
 .rightColumn {
 	max-width: 400px;
 	flex: 1 1 400px;
+}
+
+.textBlock {
+	width: 100%;
+}
+
+.horizItems {
+	display: flex;
+	margin: 30px 0px;
+	padding: 0px 30px;
+	justify-content: center;
+	align-content: center;;
+}
+
+.vertBorderR {
+	border-right: 1px solid #ebebeb;
+}
+
+.horizBorderB {
+	border-bottom: 1px solid #ebebeb;
+}
+
+.horizBorderT {
+	border-top: 1px solid #ebebeb;
+}
+
+.contentPiece {
+	
 }
